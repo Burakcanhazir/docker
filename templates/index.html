@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>ASCII ART WEB</title>
+    <link rel="stylesheet" href="static/style.css" type="text/css"/>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">ASCII ART WEB</h1>
+        <form action="/ascii-art" method="post">
+            <input type="radio" id="standard" name="fonts" value="standard" checked>
+            <label for="standard">Standard</label>
+            <input type="radio" id="shadow" name="fonts" value="shadow">
+            <label for="shadow">Shadow</label>
+            <input type="radio" id="thinkertoy" name="fonts" value="thinkertoy">
+            <label for="thinkertoy">Thinkertoy</label>
+            <div class="textbox">
+                <textarea id="freeform" name="ascii-data" maxlength="100" style="resize: none;" required></textarea>
+            </div>
+            <button type="submit">SUBMİT</button>
+        </form>
+        <pre>{{.First}}</pre>
+    </div>
+</body>
+</html>
